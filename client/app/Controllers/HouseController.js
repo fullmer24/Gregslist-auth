@@ -7,7 +7,7 @@ import { Pop } from "../Utils/Pop.js";
 function _drawHouses() {
     let template = ''
     // @ts-ignore
-    let houses = ProxyState.house
+    let houses = ProxyState.houses
     houses.forEach(h => template += h.Template)
     // console.log('drawing cars', template)
     // @ts-ignore
