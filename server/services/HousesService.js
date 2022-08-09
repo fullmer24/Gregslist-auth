@@ -1,9 +1,10 @@
+// @ts-ignore
 import { BadRequest } from "@bcwdev/auth0provider/lib/Errors.js"
 import { dbContext } from "../db/DbContext.js"
 
 class HousesService {
     async getHouses() {
-        //                                   v query object
+        //                                      v query object
         let houses = await dbContext.Houses.find()
         return houses
     }

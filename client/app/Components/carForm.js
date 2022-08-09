@@ -14,7 +14,7 @@ export function getCarForm(car = new Car({})) {
     <div class="row">
         <div class="col-4">
         <label class="form-label" for="make">Make</label>
-        <input class="form-control" type="text" minlength="5" id="make" name="make" value="${car.make}" >
+        <input class="form-control" type="text" minlength="2" id="make" name="make" value="${car.make}" >
     </div>
     <div class="col-4">
         <label class="form-label" for="model">Model</label>
@@ -22,7 +22,7 @@ export function getCarForm(car = new Car({})) {
     </div>
     <div class="col-4">
         <label class="form-label" for="year">Year</label>
-        <input class="form-control" type="number" id="year" name="year" min="1999" value="${car.year}">
+        <input class="form-control" type="number" id="year" name="year" min="1900" value="${car.year}">
     </div>
     <label class="form-label" for="price">Price</label>
     <input class="form-control" type="number" min="1000" id="price" name="price" value="${car.price}">
