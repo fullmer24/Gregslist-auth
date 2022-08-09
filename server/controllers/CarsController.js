@@ -32,7 +32,6 @@ export class CarsController extends BaseController {
         }
     }
 
-
     async getCarById(req, res, next) {
         try {
             let car = await carsService.getCarById(req.params.carId)
@@ -43,11 +42,9 @@ export class CarsController extends BaseController {
         }
     }
 
-
-
     async editCar(req, res, next) {
         try {
-            let carData = req.body // the data from the client usually a form
+            let carData = req.body
             let car = await carsService.editCar(req.params.carId, carData)
             res.send(car)
         }
